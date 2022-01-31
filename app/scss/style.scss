@@ -272,6 +272,45 @@
   }
 }
 
+//Section Decor
+//==============================================================
+
+.decor {
+  padding: 172px 0 156px;
+  background-image: url("../images/decor.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 616px;
+
+  &__title {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 540px;
+    margin-bottom: 21px;
+    padding-bottom: 21px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    color: #363838;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 200px;
+      height: 1px;
+      background: #6D7278;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5A5A5A;
+    max-width: 540px;
+  }
+}
+
 //Footer
 //========================================================
 .footer {
