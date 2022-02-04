@@ -396,6 +396,50 @@
   }
 }
 
+//Gallery
+//=========================================================
+
+.gallery {
+  padding: 80px 0 90px;
+  &__buttons {
+    text-align: center;
+
+  }
+  &__btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    border: 1px solid #454647;
+    border-radius: 20px;
+    color: #8F8D8D;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 6px 16px;
+    margin: 0 13px 40px 13px;
+  }
+ .mixitup-control-active {
+   background: #FFEF35;
+   color: #363838;
+   border: none;
+ }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px 35px;
+  }
+  &__item:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 1150px;
+  }
+}
+
 //Footer
 //========================================================
 .footer {
